@@ -4,10 +4,10 @@
  */
 
 declare(strict_types=1);
-namespace Tests\Unit\Playground\Make\Factory;
+namespace Tests\Unit\Playground\Make\Postman;
 
 /**
- * \Tests\Unit\Playground\Make\Factory\FileTrait
+ * \Tests\Unit\Playground\Make\Postman\FileTrait
  */
 trait FileTrait
 {

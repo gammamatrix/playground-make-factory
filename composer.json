@@ -1,13 +1,13 @@
 {
-    "name": "gammamatrix/playground-make-factory",
-    "description": "Playground: This package provides the playground:make:factory command.",
+    "name": "gammamatrix/playground-make-postman",
+    "description": "Playground: This package provides the playground:make:postman command.",
     "keywords": [
         "gammamatrix",
         "laravel",
         "playground",
         "playground:make"
     ],
-    "homepage": "https://github.com/gammamatrix/playground-make-factory",
+    "homepage": "https://github.com/gammamatrix/playground-make-postman",
     "license": "MIT",
     "authors": [
         {
@@ -33,13 +33,13 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "Playground\\Make\\Factory\\": "src/"
+            "Playground\\Make\\Postman\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\Feature\\Playground\\Make\\Factory\\": "tests/Feature/",
-            "Tests\\Unit\\Playground\\Make\\Factory\\": "tests/Unit/"
+            "Tests\\Feature\\Playground\\Make\\Postman\\": "tests/Feature/",
+            "Tests\\Unit\\Playground\\Make\\Postman\\": "tests/Unit/"
         }
     },
     "config": {
@@ -56,7 +56,7 @@
         },
         "laravel": {
             "providers": [
-                "Playground\\Make\\Factory\\ServiceProvider"
+                "Playground\\Make\\Postman\\ServiceProvider"
             ]
         }
     },

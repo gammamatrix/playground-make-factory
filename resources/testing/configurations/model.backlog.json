@@ -12,7 +12,7 @@
     "table": "matrix_backlogs",
     "extends": "AbstractModel",
     "implements": [],
-    "factory": false,
+    "postman": false,
     "migration": false,
     "playground": true,
     "policy": false,

@@ -21,7 +21,7 @@ return [
     |
     */
 
-    'about' => (bool) env('PLAYGROUND_MAKE_FACTORY_ABOUT', true),
+    'about' => (bool) env('PLAYGROUND_MAKE_POSTMAN_ABOUT', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -33,7 +33,7 @@ return [
     */
 
     'load' => [
-        'commands' => (bool) env('PLAYGROUND_MAKE_FACTORY_LOAD_COMMANDS', true),
-        'translations' => (bool) env('PLAYGROUND_MAKE_FACTORY_LOAD_TRANSLATIONS', true),
+        'commands' => (bool) env('PLAYGROUND_MAKE_POSTMAN_LOAD_COMMANDS', true),
+        'translations' => (bool) env('PLAYGROUND_MAKE_POSTMAN_LOAD_TRANSLATIONS', true),
     ],
 ];

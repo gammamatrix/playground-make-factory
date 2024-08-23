@@ -4,20 +4,20 @@
  */
 
 declare(strict_types=1);
-namespace Playground\Make\Factory;
+namespace Playground\Make\Postman;
 
 use Illuminate\Console\GeneratorCommand;
 use Illuminate\Foundation\Console\AboutCommand;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider;
 
 /**
- * \Playground\Make\Factory\ServiceProvider
+ * \Playground\Make\Postman\ServiceProvider
  */
 class ServiceProvider extends AuthServiceProvider
 {
     public const VERSION = '73.0.0';
 
-    public string $package = 'playground-make-factory';
+    public string $package = 'playground-make-postman';
 
     /**
      * Bootstrap any package services.
@@ -65,7 +65,7 @@ class ServiceProvider extends AuthServiceProvider
     {
         $commands = [];
 
-        // $commands[] = Console\Commands\FactoryMakeCommand::class;
+        // $commands[] = Console\Commands\PostmanMakeCommand::class;
 
         $this->commands($commands);
 
@@ -78,8 +78,8 @@ class ServiceProvider extends AuthServiceProvider
     public function register(): void
     {
         $this->mergeConfigFrom(
-            dirname(__DIR__).'/config/playground-make-factory.php',
-            'playground-make-factory'
+            dirname(__DIR__).'/config/playground-make-postman.php',
+            'playground-make-postman'
         );
     }
 
@@ -90,18 +90,11 @@ class ServiceProvider extends AuthServiceProvider
 
         $load = ! empty($config['load']) && is_array($config['load']) ? $config['load'] : [];
 
-        $version = $this->version();
-
-        AboutCommand::add('Playground: Make Factory', fn () => [
+        AboutCommand::add('Playground: Make Postman', fn () => [
             '<fg=yellow;options=bold>Load</> Commands' => ! empty($load['commands']) ? '<fg=green;options=bold>ENABLED</>' : '<fg=yellow;options=bold>DISABLED</>',
             '<fg=yellow;options=bold>Load</> Translations' => ! empty($load['translations']) ? '<fg=green;options=bold>ENABLED</>' : '<fg=yellow;options=bold>DISABLED</>',
             'Package' => $this->package,
-            'Version' => $version,
+            'Version' => ServiceProvider::VERSION,
         ]);
-    }
-
-    public function version(): string
-    {
-        return static::VERSION;
     }
 }

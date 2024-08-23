@@ -1,10 +1,10 @@
-# Playground: Make Factory
+# Playground: Make Postman
 
-[![Playground CI Workflow](https://github.com/gammamatrix/playground-make-factory/actions/workflows/ci.yml/badge.svg?branch=develop)](https://raw.githubusercontent.com/gammamatrix/playground-make-factory/testing/develop/testdox.txt)
-[![Test Coverage](https://raw.githubusercontent.com/gammamatrix/playground-make-factory/testing/develop/coverage.svg)](tests)
+[![Playground CI Workflow](https://github.com/gammamatrix/playground-make-postman/actions/workflows/ci.yml/badge.svg?branch=develop)](https://raw.githubusercontent.com/gammamatrix/playground-make-postman/testing/develop/testdox.txt)
+[![Test Coverage](https://raw.githubusercontent.com/gammamatrix/playground-make-postman/testing/develop/coverage.svg)](tests)
 [![PHPStan Level 9](https://img.shields.io/badge/PHPStan-level%209-brightgreen)](.github/workflows/ci.yml#L120)
 
-The Playground Make Factory Tool for building out [Laravel](https://laravel.com/docs/11.x) applications.
+The Playground Make Postman Tool for building out [Laravel](https://laravel.com/docs/11.x) applications.
 
 ## Installation
 
@@ -14,16 +14,16 @@ The Playground Make Factory Tool for building out [Laravel](https://laravel.com/
 
 Playground Make provides information in the `artisan about` command.
 
-<!-- <img src="resources/docs/artisan-about-playground-make-factory.png" alt="screenshot of artisan about command with Playground Make."> -->
+<!-- <img src="resources/docs/artisan-about-playground-make-postman.png" alt="screenshot of artisan about command with Playground Make."> -->
 
 ## Configuration
 
 You can publish the config file with:
 ```bash
-php artisan vendor:publish --provider="Playground\Make\Factory\ServiceProvider" --tag="playground-config"
+php artisan vendor:publish --provider="Playground\Make\Postman\ServiceProvider" --tag="playground-config"
 ```
 
-See the contents of the published config file: [config/playground-make-factory.php](config/playground-make-factory.php)
+See the contents of the published config file: [config/playground-make-postman.php](config/playground-make-postman.php)
 
 ## Commands
 
